@@ -10,18 +10,22 @@ const socialLinks = [
 
 export const Hero = () => {
 
-    const [isDarkMode, setDarkMode] = useState(false);
+    const [isDarkMode, setDarkMode] = useState(() => {
+      return localStorage.getItem("theme") == "dark";
+    });
 
     useEffect(() => {
       if (isDarkMode) {
-        document.body.classList.add('dark')
+        document.body.classList.add("dark")
+        localStorage.setItem("theme", "dark");
       } else {
-        document.body.classList.remove('dark')
+        document.body.classList.remove("dark")
+        localStorage.setItem("theme", "light");
       }
     }, [isDarkMode])
 
     return (
-      <section className = "h-screen flex flex-col justify-center items-center bg-slate-50 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200 relative">
+      <section className = "min-h-screen flex flex-col justify-center items-center relative">
 
         <button 
           onClick = {() => setDarkMode(!isDarkMode)}
