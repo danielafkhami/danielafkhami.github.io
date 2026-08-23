@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaSun, FaMoon } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
 const SOCIAL_LINKS = [
@@ -10,33 +9,15 @@ const SOCIAL_LINKS = [
 ];
 
 export const Hero = () => {
-
-    const [isDarkMode, setDarkMode] = useState(() => {
-      const savedTheme = localStorage.getItem("theme")
-      return savedTheme ? savedTheme === "dark" : true
-    });
-
-    useEffect(() => {
-      document.body.classList.toggle("dark", isDarkMode);
-      localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-    }, [isDarkMode])
-
     return (
-      <section className = "min-h-screen flex flex-col justify-center items-center relative font-sans">
-
-        <button 
-          onClick = {() => setDarkMode(!isDarkMode)}
-          className = "absolute top-6 right-6 p-4 rounded-xl bg-slate-200 dark:bg-slate-800 hover:scale-110 transition-transform cursor-pointer"
-          >
-          { isDarkMode ? <FaSun className="text-amber-400 text-xl" /> : <FaMoon className="text-slate-800 text-xl" /> }
-        </button>
-
+      <section className = "min-h-screen flex flex-col justify-center items-center font-sans">
         <div className = "text-center flex flex-col gap-4">
 
           <h1 className = "text-4xl sm:text-6xl md:text-7xl font-bold flex flex-row justify-center gap-2 md:gap-4 font-mono [word-spacing:-10px]">
             <span className="text-green-600 dark:text-green-500 select-none">~$</span>
 
-            <TypeAnimation sequence={[400, "Daniel Afkhami"]}
+            <TypeAnimation 
+            sequence={[400, "Daniel Afkhami"]}
             wrapper = "span"
             speed = {20}
             repeat={0}
