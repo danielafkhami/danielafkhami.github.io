@@ -36,8 +36,8 @@ export const Hero = () => {
             </div>
 
             <h1
-              className={`text-4xl sm:text-6xl md:text-7xl font-bold text-slate-900 dark:text-white tracking-tight pt-1 whitespace-nowrap transition-all duration-500 ease-out ${
-                revealed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+              className={`text-4xl sm:text-6xl md:text-7xl font-bold text-slate-900 dark:text-white tracking-tight pt-1 whitespace-nowrap ${
+                revealed ? "animate-fade-in-up" : "opacity-0"
               }`}
             >
               Daniel Afkhami
@@ -45,8 +45,8 @@ export const Hero = () => {
           </div>
 
           <p
-            className={`mt-6 pt-6 border-t border-slate-200 dark:border-white/10 text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-400 font-bold [word-spacing:-3px] transition-all duration-500 ease-out delay-150 ${
-              revealed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+            className={`mt-6 pt-6 border-t border-slate-200 dark:border-white/10 text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-400 font-bold [word-spacing:-3px] ${
+              revealed ? "animate-fade-in-up [animation-delay:150ms]" : "opacity-0"
             }`}
           >
             Honors Math + CS @{" "}
@@ -62,8 +62,8 @@ export const Hero = () => {
         </TerminalWindow>
 
         <nav
-          className={`w-full flex flex-wrap items-center justify-center text-sm sm:text-base text-sky-600 dark:text-sky-400 font-bold gap-6 md:gap-12 p-2 transition-all duration-500 ease-out delay-300 ${
-            revealed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+          className={`w-full flex flex-wrap items-center justify-center text-sm sm:text-base text-sky-600 dark:text-sky-400 font-bold gap-6 md:gap-12 p-2 ${
+            revealed ? "animate-fade-in-up [animation-delay:300ms]" : "opacity-0"
           }`}
         >
           {SOCIAL_LINKS.map((link) => {
