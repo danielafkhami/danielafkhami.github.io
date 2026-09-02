@@ -1,4 +1,4 @@
-export const TerminalWindow = ({ title, children, className = "" }) => (
+export const TerminalWindow = ({ title, children, className = "", contentClassName = "" }) => (
   <div
     className={`rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/40 shadow-sm overflow-hidden ${className}`}
   >
@@ -12,6 +12,8 @@ export const TerminalWindow = ({ title, children, className = "" }) => (
         </span>
       )}
     </div>
-    <div className="p-6 md:p-8">{children}</div>
+    <div className={`p-6 sm:p-8 ${contentClassName}`}>
+      {children}
+    </div>
   </div>
 );
