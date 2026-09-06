@@ -49,7 +49,7 @@ export const Hero = () => {
 
           <p
             className={`mt-4 pt-4 sm:mt-5 sm:pt-5 md:mt-6 md:pt-6 border-t border-slate-200 dark:border-white/10 
-              text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-400 font-bold [word-spacing:-3px] ${
+              text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-400 font-bold ${
               revealed ? "animate-fade-in-up [animation-delay:150ms]" : "opacity-0"
             }`}
           >
