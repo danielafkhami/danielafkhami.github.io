@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa6";
 import { Hero } from '@/sections/Hero'
+import { About } from '@/sections/About'
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(() => {
@@ -25,6 +26,7 @@ function App() {
       </button>
       
       <Hero />
+      <About />
     </main>
   )
 }
