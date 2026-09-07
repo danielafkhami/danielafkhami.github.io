@@ -4,6 +4,7 @@ import { Hero } from '@/sections/Hero'
 import { About } from '@/sections/About'
 import { Skills } from '@/sections/Skills'
 import { Experience } from '@/sections/Experience'
+import { Footer } from '@/components/Footer'
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(() => {
@@ -31,6 +32,7 @@ function App() {
       <About />
       <Skills />
       <Experience />
+      <Footer />
     </main>
   )
 }
