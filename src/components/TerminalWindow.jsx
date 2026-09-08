@@ -3,11 +3,11 @@ export const TerminalWindow = ({ title, children, className = "", contentClassNa
     className={`rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/40 shadow-sm overflow-hidden ${className}`}
   >
     <div className="flex items-center gap-2 px-4 py-2.5 border-b border-slate-200 dark:border-slate-800 bg-slate-100/90 dark:bg-slate-900/90">
-      <span className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
-      <span className="w-2.5 h-2.5 rounded-full bg-amber-400/70" />
-      <span className="w-2.5 h-2.5 rounded-full bg-green-400/70" />
+      <span className="w-2.5 h-2.5 rounded-full bg-red-400/70 shrink-0" />
+      <span className="w-2.5 h-2.5 rounded-full bg-amber-400/70 shrink-0" />
+      <span className="w-2.5 h-2.5 rounded-full bg-green-400/70 shrink-0" />
       {title && (
-        <span className="ml-2 truncate">
+        <span className="ml-2 flex-1 min-w-0 truncate">
           {title}
         </span>
       )}
