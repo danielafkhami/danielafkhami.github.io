@@ -11,7 +11,7 @@ const PROJECTS = [
       "Validated performance by statistically comparing generated energy/magnetization distributions against theoretical baselines.",
     ],
     stack: ["NumPy", "PyTorch", "Matplotlib"],
-    url: "https://github.com/danielafkhami",
+    url: "https://github.com/danielafkhami/diffusion-model-ising",
   },
   {
     name: "Physics-Informed Neural Network (PINN) Modeling Field-Induced Motion of Ferrofluid",
@@ -21,7 +21,7 @@ const PROJECTS = [
       "Achieved accurate extrapolation from limited data through enforcing residuals of the governing differential equation."
     ],
     stack: ["NumPy", "SciPy", "TensorFlow", "Matplotlib"],
-    url: "https://github.com/danielafkhami",
+    url: "https://github.com/danielafkhami/pinn-ferrofluid-motion",
   },
 ];
 
