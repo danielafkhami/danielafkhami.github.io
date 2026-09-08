@@ -77,7 +77,7 @@ export const Hero = () => {
             rel="noopener noreferrer"
             className="flex flex-row gap-2 items-center text-base sm:text-lg md:text-xl text-sky-600 dark:text-sky-400 
             py-2 px-3 sm:py-2.5 sm:px-3.5 md:py-3 md:px-4 border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/40 shadow-sm rounded-lg 
-            hover:scale-105 active:scale-95 transform-gpu hover:opacity-80 transition-opacity transition-transform"
+            hover:border-slate-400 dark:hover:border-slate-600 hover:shadow-md transition-colors transition-shadow"
           >
             <FaFileLines /> Resume
           </a>
