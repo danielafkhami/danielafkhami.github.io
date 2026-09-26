@@ -4,23 +4,23 @@ import { TerminalWindow } from "@/components/TerminalWindow";
 
 const PROJECTS = [
   {
-    name: "Denoising Diffusion Probabilistic Model (DDPM) Synthesizing 2D Ising System Configurations",
+    name: "Discrete Denoising Diffusion Probabilistic Model (D3PM) Synthesizing 2D Ising System Configurations",
     description: [
-      "Implemented a NumPy Monte Carlo engine to generate a dataset of Ising model lattice states at critical temperatures.",
-      "Designed a DDPM using PyTorch and a U-Net architecture in Python to predict spin configurations at critical temperatures.",
-      "Validated performance by statistically comparing generated energy/magnetization distributions against theoretical baselines.",
+      "Built a Numba-compiled Metropolis Monte Carlo sampler to generate a dataset of 32 x 32 Ising model lattice states at the critical temperature.",
+      "Designed a 300-step PyTorch Discrete Denoising Diffusion Probabilistic Model (D3PM) using a U-Net architecture, exact binary reverse transitions, and EMA-stabilized refinement.",
+      "Evaluated 500 generated configurations against 500 held-out simulations by comparing energy and magnetization distributions with KS and Wasserstein statistics, demonstrating strong overall agreement with the reference data.",
     ],
-    stack: ["NumPy", "PyTorch", "Matplotlib"],
+    stack: ["Python", "PyTorch", "NumPy", "SciPy", "Numba", "Matplotlib"],
     url: "https://github.com/danielafkhami/diffusion-model-ising",
   },
   {
     name: "Physics-Informed Neural Network (PINN) Modeling Field-Induced Motion of Ferrofluid",
     description: [
-      "Derived governing force equations for the movement of ferrofluid droplets through viscous water under the influence of field gradients, and used SciPy to numerically compute traversal times of ferrofluid droplets toward a magnetic field source.",
-      "Designed and implemented a PINN using TensorFlow in Python to predict traversal times.",
-      "Achieved accurate extrapolation from limited data through enforcing residuals of the governing differential equation."
+      "Derived the governing ODE balancing nonlinear magnetic force with Stokes drag to model the movement of a ferrofluid droplet through a viscous medium under a magnetic-field gradient.",
+      "Built a TensorFlow Physics-Informed Neural Network (PINN) trained on 4 noisy observations and 1,000 collocation points, combining data loss with an automatically differentiated physics residual.",
+      "Compared predicted traversal times with a SciPy quadrature reference over 0-20 mm, achieving accurate extrapolation beyond the 15-20 mm observation interval."
     ],
-    stack: ["NumPy", "SciPy", "TensorFlow", "Matplotlib"],
+    stack: ["Python", "TensorFlow", "NumPy", "SciPy", "Matplotlib"],
     url: "https://github.com/danielafkhami/pinn-ferrofluid-motion",
   },
 ];
