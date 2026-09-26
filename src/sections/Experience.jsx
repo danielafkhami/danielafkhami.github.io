@@ -4,17 +4,17 @@ import STPLogo from "@/assets/logos/stp.jpeg";
 
 const EXPERIENCES = [
   {
-    org: "Stone Temple Partners LLC",
+    org: "Stone Temple Partners, LLC",
     logo: STPLogo,
     title: "Software Engineer Intern",
-    duration: "May 2026 - August 2026",
+    duration: "May 2026 - Present",
     role: "Full-stack engineer on a wealth-management platform for RIAs serving UHNW households.",
     description: [
-      "Implemented CRM functionality in use by 8 advisors overseeing $750M+ AUM, designing RESTful endpoints using FastAPI against a React/TypeScript frontend and a Supabase/PostgreSQL schema.",
-      "Shipped a portfolio analysis and tax-aware rebalancing engine that scores a prospective client’s portfolio against a Monte Carlo optimizer and generates executable transition plans with capital-gains netting, loss harvesting, and wash-sale constraints.",
+      "Implemented CRM functionality in use by 8 advisors overseeing $750M+ AUM, designing RESTful endpoints using FastAPI for a React/TypeScript frontend backed by a Supabase/PostgreSQL schema.",
+      "Shipped a portfolio analysis and tax-aware rebalancing engine that scores a prospective client's portfolio against a Monte Carlo-optimized target and generates executable transition plans with capital-gains netting, tax-loss harvesting, and wash-sale constraints.",
       "Delivered a Windows desktop application (PySide6) that records advisor calls, transcribes them via Azure AI Speech, and files LLM-generated summaries to five CRM record types, cutting transcription costs ~95% by retiring a third-party service.",
       "Built automated ETL pipelines (Supabase Edge Functions on pg_cron) that reconcile position-level data via the Addepar API, giving advisors direct access to household AUM, cash balances, and per-fund performance for pooled vehicles.",
-      "Replaced password authentication with Microsoft OAuth 2.0 SSO and built an in-app mail client via the Microsoft Graph API with automated email filing, eliminating stored credentials and provisioning every Microsoft integration from one sign-in.",
+      "Replaced password authentication with Microsoft OAuth 2.0 SSO and built an in-app mail client via the Microsoft Graph API with automated email filing, eliminating stored credentials and routing every Microsoft integration through a single authentication flow.",
     ]
   }
 ]
