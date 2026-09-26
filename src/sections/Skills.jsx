@@ -3,20 +3,20 @@ import { TerminalWindow } from "@/components/TerminalWindow";
 
 const SKILLS = [
   {
-    category: "Programming",
-    items: ["Python", "Java", "TypeScript/JavaScript", "HTML/CSS", "SQL", "LaTeX", "Bash"],
+    category: "Languages",
+    items: ["Python", "Java", "C", "C++", "TypeScript", "JavaScript", "SQL", "HTML", "CSS", "Bash"],
   },
   {
     category: "Frameworks & Libraries",
-    items: ["React", "Tailwind CSS", "Vite", "FastAPI", "NumPy/SciPy", "PyTorch", "PySide6"],
+    items: ["React", "FastAPI", "Tailwind CSS", "PyTorch", "TensorFlow", "NumPy", "SciPy", "PySide6"],
   },
   {
-    category: "Databases",
-    items: ["PostgreSQL", "Supabase"],
+    category: "Data & Cloud",
+    items: ["PostgreSQL", "Supabase", "Azure"],
   },
   {
-    category: "Cloud & Tools",
-    items: ["Git", "Docker", "Azure", "Vercel", "Railway", "Addepar"],
+    category: "Tools & Platforms",
+    items: ["Git", "Docker", "Vite", "Vercel", "Railway", "Addepar"],
   },
 ];
 
